@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>Lab--3</title>
+    <!-- <link rel="icon" type="image/jpg" href="Lab2.jpg"> -->
+</head>
+<body>
+    <h1>Forms </h1>
+    <form method="post">
+        <label>Registration_no </label> <br>
+        <input type="text" required name="Registration_no" placeholder="Enter your reg_no" 
+        pattern="[A-Za-z0-9]+" ><br>
+        <label>Password </label> <br>
+        <input type="password" required name="password" placeholder="Enter your password" 
+        pattern="[A-Za-z0-9]+"><br>
+        <label>Email</label> <br>
+        <input type="email" required name="email" placeholder="Enter your email" 
+        pattern="[A-Za-z0-9._%+\-]+@[A-Za-z]+\.[A-Za-z]+"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <br>
+    <form>
+        <label for="date">Date</label><br>
+        <input type="date" required name="Submission date" value="date" id="date" ><br>
+        <label for="Profile pic">Profile pic</label><br>
+        <input type="file" required name="Profile pic" value="image" id="image" required><br>
+        <label for="Marks">Number</label><br>
+        <input type="number" required name="Marks" value="Score" id="score" placeholder="Enter your Marks" 
+        pattern="[0-9]+"><br>
+        <p>Gender:</p>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <label for="Program">Programs</label>
+        
+        <select>
+            <option  disabled selected>Select program </option>
+            <option>BSSE</option>
+            <option>BSCS</option>
+            <option>BSDS</option>
+            <option>BSCyb</option>
+            <option>BSAI</option>
+        </select>
+        <br>
+        <a href="A:\Web development\HTML\Lab--3(b).html" target="_blank"> link to second page</a>
+    </form>
+</body>
+</html>
