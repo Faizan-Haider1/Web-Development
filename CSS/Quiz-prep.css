@@ -1,0 +1,13 @@
+div>p{
+    color: rgb(240, 86, 4);
+    font-style:italic
+} 
+ div p{
+    color: rgb(20, 244, 54);
+    font-style:italic
+}
+
+span+h3{
+    color: rgb(65, 20, 244);
+    font-style:italic
+}
