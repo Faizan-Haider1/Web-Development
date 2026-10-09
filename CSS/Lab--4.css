@@ -1,0 +1,40 @@
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+a:hover{
+    color:rgb(6, 250, 108);
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    border: 2px dotted rgb(7, 199, 252);
+    height: 500px;
+    
+}
+
+.container div{
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border:2px solid red;
+    width:100px;
+}
+div img{
+    width:100px;
+    height: 100px;
+}
+div img{
+    width:100px;
+    height: 100px;
+}
+div img{
+    width:100px;
+    height: 100px;
+}
+.container div{
+    display: inline-block;
+}
+/* nav {
+    background-color:aqua;
+} */
