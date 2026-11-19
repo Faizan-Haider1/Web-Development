@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio - Bootstrap Responsive Website</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow-sm sticky-top">
+    <div class="container">
+  
+      <a class="navbar-brand fw-bold fs-4" href="#home">
+        <i class="bi bi-code-slash me-2"></i>DevPortfolio
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">
+              <i class="bi bi-house-door me-1"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">
+              <i class="bi bi-grid me-1"></i>Services
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-laptop me-1"></i>Skills
+            </a>
+            <ul class="dropdown-menu shadow">
+              <li><a class="dropdown-item" href="#skills"><i class="bi bi-filetype-html text-danger me-2"></i>HTML5 &amp; Semantic Web</a></li>
+              <li><a class="dropdown-item" href="#skills"><i class="bi bi-filetype-css text-primary me-2"></i>CSS3 &amp; Bootstrap 5</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#skills"><i class="bi bi-filetype-js text-warning me-2"></i>JavaScript &amp; Git</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <i class="bi bi-envelope me-1"></i>Contact
+            </a>
+          </li>
+        </ul>
+
+   
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search topics..." aria-label="Search">
+          <button class="btn btn-light text-primary fw-semibold d-flex align-items-center" type="submit">
+            <i class="bi bi-search me-1"></i>Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="bg-white border-bottom py-5">
+    <div class="container text-center py-lg-4">
+      <span class="badge bg-primary-subtle text-primary fs-6 fw-semibold px-3 py-2 rounded-pill mb-3">
+        <i class="bi bi-stars me-1"></i>CS371 Web Development
+      </span>
+      <h1 class="display-4 fw-bold text-dark mb-3">
+        Building Modern &amp; Responsive Websites
+      </h1>
+      <p class="lead text-secondary col-lg-8 mx-auto mb-4">
+        Welcome to my web development portfolio. Explore core front-end technologies, responsive grid layouts, and clean user interfaces crafted with HTML5, CSS3, and Bootstrap 5.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="#skills" class="btn btn-primary btn-lg px-4 fw-semibold">
+          <i class="bi bi-rocket-takeoff me-2"></i>Explore Skills
+        </a>
+        <a href="#contact" class="btn btn-outline-secondary btn-lg px-4 fw-semibold">
+          <i class="bi bi-person-lines-fill me-2"></i>Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="skills" class="container my-5 flex-grow-1">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-dark">Core Web Technologies</h2>
+      <p class="text-muted fs-5">Responsive 3-column layout adapting smoothly across mobile, tablet, and desktop screens</p>
+    </div>
+
+    
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          
+          <img src="html-1.webp" class="card-img-top" alt="Web Structure and HTML5">
+          <div class="card-body d-flex flex-column p-4">
+            <div class="mb-2">
+              <span class="badge bg-danger-subtle text-danger fw-semibold">Frontend Structure</span>
+            </div>
+            <h5 class="card-title fw-bold fs-4 text-dark">HTML5 &amp; Semantic Markup</h5>
+            <p class="card-text text-secondary flex-grow-1">
+              Structuring accessible, SEO-friendly web pages using clean semantic elements, forms, multimedia embeds, and modern web standards.
+            </p>
+            <a href="#" class="btn btn-primary mt-3 fw-medium">
+              <i class="bi bi-file-earmark-code me-2"></i>View HTML Projects
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="bootstrap-logo-png_seeklogo-258859.webp" class="card-img-top" alt="Responsive Design with Bootstrap">
+          <div class="card-body d-flex flex-column p-4">
+            <div class="mb-2">
+              <span class="badge bg-primary-subtle text-primary fw-semibold">Responsive UI</span>
+            </div>
+            <h5 class="card-title fw-bold fs-4 text-dark">Bootstrap 5 Grid &amp; Components</h5>
+            <p class="card-text text-secondary flex-grow-1">
+              Designing mobile-first layouts with Bootstrap's 12-column grid system, utility classes, navigation bars, cards, and interactive components.
+            </p>
+            <a href="#" class="btn btn-outline-primary mt-3 fw-medium">
+              <i class="bi bi-layout-text-window-reverse me-2"></i>Explore Layouts
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="github.webp" class="card-img-top" alt="Version Control with Git and GitHub">
+          <div class="card-body d-flex flex-column p-4">
+            <div class="mb-2">
+              <span class="badge bg-success-subtle text-success fw-semibold">Version Control</span>
+            </div>
+            <h5 class="card-title fw-bold fs-4 text-dark">Git &amp; GitHub Workflow</h5>
+            <p class="card-text text-secondary flex-grow-1">
+              Managing source code history, tracking project revisions, and collaborating on repositories using industry-standard Git commands.
+            </p>
+            <a href="#" class="btn btn-dark mt-3 fw-medium">
+              <i class="bi bi-github me-2"></i>Visit GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer id="contact" class="bg-dark text-light pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold text-white mb-3">
+            <i class="bi bi-code-slash text-primary me-2"></i>DevPortfolio
+          </h5>
+          <p class="text-white-50 small">
+            Developed as part of CS371 Web Development Lab #08 at Kohat University of Science &amp; Technology (KUST). Built with Bootstrap 5 and Bootstrap Icons.
+          </p>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold text-white mb-3">Contact Details</h5>
+          <ul class="list-unstyled text-white-50 small">
+            <li class="mb-2">
+              <i class="bi bi-geo-alt-fill text-primary me-2"></i>Institute of Computing, KUST, Kohat
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-envelope-fill text-primary me-2"></i>student@kust.edu.pk
+            </li>
+            <li class="mb-2">
+              <i class="bi bi-telephone-fill text-primary me-2"></i>+92 300 1234567
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <h5 class="fw-bold text-white mb-3">Connect With Me</h5>
+          <p class="text-white-50 small mb-3">Follow my coding journey and projects on social media:</p>
+          <div class="d-flex gap-2">
+            <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" aria-label="Facebook">
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" aria-label="LinkedIn">
+              <i class="bi bi-linkedin fs-5"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" aria-label="Instagram">
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm rounded-circle" aria-label="GitHub">
+              <i class="bi bi-github fs-5"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="text-center text-white-50 small">
+        &copy; 2026 DevPortfolio | CS371 Web Development Lab #08. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
